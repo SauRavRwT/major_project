@@ -1,0 +1,135 @@
+*{
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+html {
+    scroll-behavior: smooth;
+  }  
+  .scroll-top {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.336);
+    /* hover effect default */
+    transform: scale(0.9);
+    transition: 0.3s ease-in-out transform;
+    /* for centering the icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .scroll-top svg {
+    width: 50%;
+    color: black;
+    pointer-events: none;
+  }
+  
+  .scroll-top:hover {
+    transform: scale(1);
+  }
+  
+ /* Quote */
+ .Quote {
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+}
+#quote {
+  text-align: center;}
+#author {
+  float: right;
+  color: aliceblue;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Navbar */
+nav {
+  padding:20px;
+  width:40px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.6s linear;
+}
+
+nav.active{
+  width: 200px;
+}
+
+nav ul {
+  list-style-type: none;
+  display:flex;
+  padding:0;
+  margin:0;
+  width:0;
+  transition: width 0.6s linear;
+}
+
+nav.active ul{
+  width: 80%;
+}
+
+nav ul li{
+  opacity: 0;
+  transform: rotateY(0deg);
+  transition: transform 0.6s linear, opacity 0.6s linear; 
+}
+
+nav.active ul li{
+  opacity:1;
+  transform: rotateY(360deg)
+}
+
+nav li a{
+  text-decoration: none;
+  color:#000;
+  position:relative;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.icon{
+  background-color: #219ebc;
+  border:0;
+  border-radius: 5px;
+  height:30px;
+  width: 30px;
+  cursor:pointer;
+  position:relative;
+  padding:0;
+}
+
+.icon:focus{
+  outline:0;
+}
+
+.icon .line{
+  background-color: #000;
+  height:2px;
+  width:20px;
+  position:absolute;
+  top:10px;
+  left:5px;
+  transition: transform 0.6s linear;
+}
+
+.icon .line2{
+  top:auto;
+  bottom:10px;
+}
+
+nav.active .icon .line1{
+  transform: rotate(765deg) translateY(5.5px);
+}
+
+nav.active .icon .line2{
+  transform: rotate(-765deg) translateY(-5.5px);
+}
