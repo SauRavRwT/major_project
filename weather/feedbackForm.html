@@ -85,8 +85,8 @@
 
             <div class="form-outline mb-4">
                 <h5 class="mx-3 lead" style="font-size: large">Username</h5>
-                <input type="text" id="fdFormUsername" class="form-control"
-                    placeholder="username should be UNIQUE" style="border-radius: 8px; height: 40px;font-size: 14px;"  />
+                <input type="text" id="fdFormUsername" class="form-control" placeholder="username should be UNIQUE"
+                    style="border-radius: 8px; height: 40px;font-size: 14px;" />
             </div>
 
             <!-- Email address input -->
@@ -107,7 +107,7 @@
             <!-- Form submit button -->
             <div class="d-grid py-2">
                 <button style="border-radius: 5px; height: 40px; width: 80px;" class="btn btn-success btn-lg"
-                    id="submitButton" type="submit">
+                    id="submitButton" onclick="showAlert()" type="submit">
                     Send</button>
             </div>
 
@@ -159,7 +159,9 @@
                 msgContent: msgContent,
             });
         };
-
+        function showAlert() {
+            alert("Your Feedback is Submitted");
+        }
         const getElementVal = (id) => {
             return document.getElementById(id).value;
         };
