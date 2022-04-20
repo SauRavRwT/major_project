@@ -63,7 +63,9 @@ const saveMessages = (name, emailid, msgContent) => {
     msgContent: msgContent,
   });
 };
-
+function showAlert() {
+  alert ("Your Feedback is Submitted");
+}
 const getElementVal = (id) => {
   return document.getElementById(id).value;
 };
