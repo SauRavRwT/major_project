@@ -18,8 +18,10 @@
     <title>Major project</title>
 </head>
 
-<body style="font-family: monospace, sans-serif; background-image: linear-gradient(to right,#219ebc, #8ecae6);">
+<body style="font-family: monospace; background-image: linear-gradient(to bottom,#219ebc, #8ecae6);">
+   
     <!-- <style>
+        /* for automated dark-mode */
         @media (prefers-color-scheme: dark) {
             body {
                 /* Just Styles */
@@ -43,9 +45,9 @@
                 <li>
                     <a href="#Weather">Weather</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="#Songeet">Songeet</a>
-                </li>
+                </li> -->
                 <li>
                     <a href="#Support">Support</a>
                 </li>
@@ -60,10 +62,9 @@
     <!-- Quotes -->
     <div class="Quote my-3">
         <div class="quote-box">
-            <p class="lead" id="quote">"Sometimes I wish I was a cloud... Just floating along, going wherever the breeze
-                takes me."</p>
+            <p class="lead" id="quote">"It is not wise to judge others based on your own preconceptions and by their appearances."</p>
             <a id="btn">
-                <p class="lead text-center" id="author"> - Shikamaru Nara</p>
+                <p class="lead text-center" id="author"> - Itachi Uchiha</p>
             </a>
         </div>
     </div>
@@ -75,16 +76,16 @@
         <div id="overviewcarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner" style="height: 100%;">
                 <div class="carousel-item active" data-bs-interval="10000">
-                    <img style="height: 100%; width: 100%; border-radius: 20px" src="./images/main.png"
-                        class="d-block w-100" alt="maincarouselimg">
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
                     <img style="height: 100%; width: 100%; border-radius: 20px" src="./images/PapersC1.png"
                         class="d-block w-100" alt="maincarouselimg">
                 </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img style="height: 100%; width: 100%; border-radius: 20px" src="./images/WeatherC1.png"
+                        class="d-block w-100" alt="maincarouselimg">
+                </div>
                 <div class="carousel-item">
-                    <img style="height: 100%; width: 100%; border-radius: 20px" src="" class="d-block w-100"
-                        alt="maincarouselimg">
+                    <img style="height: 100%; width: 100%; border-radius: 20px" src="./images/WeatherC1.png" 
+			class="d-block w-100" alt="maincarouselimg">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#overviewcarousel" data-bs-slide="prev">
@@ -313,7 +314,7 @@
         <h1 class="text-dark text-center display-4">Your Questions are Answered here</h1>
         <div class="row justify-content-center d-flex">
             <div class="container col">
-                <img src="./images/faq.png" style="width: 350px; height: 350px;" alt="faqimg">
+                <img src="./images/feedback.png" style="width: 350px; height: 350px;" alt="faqimg">
             </div>
             <div class="container-fluid col">
                 <h2 class="my-3 text-success">
@@ -343,7 +344,7 @@
         <div class="row justify-content-center d-flex">
             <h1 class="my-3 text-dark text-center display-4">Your Feedback is !mportant to us</h1>
             <div class="container col">
-                <img src="./images/feedback.png" style="width: 350px; height: 350px;" alt="feedbackimg">
+                <img src="./images/feedback1.png" style="width: 350px; height: 350px;" alt="feedbackimg">
             </div>
 
             <div class="col container py-4">
