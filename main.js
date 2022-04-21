@@ -127,10 +127,3 @@ window.onload = function() {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff} ";
   document.body.appendChild(css);
 };
-
-// navbar
-const nav =document.getElementById('nav');
-const toggle =document.getElementById('toggle')
-
-
-toggle.addEventListener('click', () => nav.classList.toggle('active'))
