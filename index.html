@@ -21,15 +21,30 @@
 <body style="font-family: monospace; background-image: linear-gradient(to bottom,#219ebc, #8ecae6);">
 
     <!--navbar-->
-    <div class="row justify-content-center d-flex py-2">
-        <img id="majorlogo" class="col" src="./images/Project logo.png" style="width: 20rem;" alt="majorlogo">
-        <!-- <h1 id="majorlogo" class="col mx-5" style="font-size: 80px;">Web Projects</h1> -->
-        <nav class="col my-auto justify-content-center d-flex mx-3">
-            <a class="text-decoration-none text-dark" href="#papers" style="font-size: 1rem; font-weight: bold;">Papers</a>
-            <a class="text-decoration-none text-dark" href="#Movies" style="font-size: 1rem; font-weight: bold;">Movies</a>
-            <a class="mx-1 text-decoration-none text-dark" href="#Weather" style="font-size: 1rem; font-weight: bold;">Weather</a>
-<!--             <a class="text-decoration-none text-dark" href="#Songeet" style="font-size: 1rem; font-weight: bold;">Songeet</a> -->
-            <a class="text-decoration-none text-dark" href="#Support" style="font-size: 1rem; font-weight: bold;">Support</a>
+    <div class="row justify-content-center d-flex my-3">
+        <img id="majorlogo" class="col" src="./images/Project logo.png" style="width: 300px;" alt="majorlogo">
+        <nav class="col my-auto text-center" id="nav" class="active col">
+            <ul>
+                <li>
+                    <a href="#papers">Papers</a>
+                </li>
+                <li>
+                    <a href="#Movies">Movies</a>
+                </li>
+                <li>
+                    <a href="#Weather">Weather</a>
+                </li>
+                <li>
+                    <a href="#Songeet">Songeet</a>
+                </li>
+                <li>
+                    <a href="#Support">Support</a>
+                </li>
+            </ul>
+            <button id="toggle" class="icon">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+            </button>
         </nav>
     </div>
 
