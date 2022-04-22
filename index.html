@@ -18,12 +18,20 @@
     <title>Major project</title>
 </head>
 
-<body style="font-family: monospace; background-image: linear-gradient(to bottom,#219ebc, #8ecae6);">
-
+<body style="background-image: linear-gradient(to right, cadetblue, lightblue);">
+    <!-- <style>
+        @media (prefers-color-scheme: dark) {
+            body {
+                /* Just Styles */
+                background: #000;
+                color: #fff;
+            }
+        }
+    </style> -->
     <!--navbar-->
-    <div class="row justify-content-center d-flex my-3">
-        <img id="majorlogo" class="col" src="./images/Project logo.png" style="width: 250px;" alt="majorlogo">
-        <nav class="col active my-auto text-center" id="nav">
+    <div class="row justify-content-center d-flex p-3">
+        <img id="majorlogo" class="col" src="./images/projectlogo.png" style="width: 10rem;" alt="majorlogo">
+        <nav class="col my-auto text-center" id="nav">
             <ul>
                 <li>
                     <a href="#papers">Papers</a>
@@ -54,14 +62,14 @@
             <p class="lead" id="quote">"It is not wise to judge others based on your own preconceptions and by their
                 appearances."</p>
             <a id="btn">
-                <p class="lead text-center" id="author"> - Itachi Uchiha</p>
+                <p class="lead text-center font-monospace" id="author"> - Itachi Uchiha</p>
             </a>
         </div>
     </div>
 
     <!-- Overview Container -->
     <div class="container justify-content-center py-4" style="border-radius: 20px;
-    box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.336);">
+    box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.336); background-color: lightcyan;">
         <!-- carousel strating from here -->
         <div id="overviewcarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner" style="height: 100%;">
@@ -91,7 +99,7 @@
         <!-- intro -->
         <div class="jumbotron p-3 p-md-5 text-dark">
             <div class="col-md-8 px-0">
-                <h1 class="display-4 font-italic">Overview</h1>
+                <h1 class="display-2 font-monospace">Overview</h1>
                 <p class="lead my-1">This is a Major project or we can say a beta project.
                     To make all in one webpage that have all important pages or sites. To make users feel convenient and
                     use more features that are provided by us.
@@ -107,12 +115,12 @@
 
     <!-- Papers wallpaper app -->
     <div class="container my-4" id="papers"
-        style="border-radius: 20px; box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.336);">
+        style="border-radius: 20px; box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.336); background-color: lightsteelblue;">
         <div class="d-flex justify-content-center col-5">
             <a class="text-decoration-none" href="./Papers/index.html" target="_blank">
                 <!-- <img class="my-3 rounded-circle" style="width: 150px;height: 150px;" src="./Papers/images/Logo.png"
                     alt="Papers logo"> -->
-                <h1 class="text-dark text-center mx-2" style="font-size: 5rem;">Papers</h1>
+                <h1 class="mx-3 text-dark text-center display-1 font-monospace ">Papers</h1>
             </a>
         </div>
         <!-- carousel strating from here -->
@@ -142,17 +150,18 @@
         </div>
         <!-- carousel Ending from here -->
         <div class="jumbotron p-3 p-md-5 text-dark">
-            <h1>About</h1>
+            <h1 class="font-monospace">About</h1>
             <p class="lead my-3">A wallpaper web app using pexels Api. Which get images from pexels and shows images in
                 Papers web app. Demonstration video is given below.
             </p>
-            <div class="container-fluid" style="width: 300px; height: 200px;">
-                <a href="./images/papersample.gif" target="_blank">
-                    <img style="border-radius: 10px;" src="./images/papersample.gif" alt="papersamplegif">
+            <div class="container-fluid">
+                <a class="justify-content-center d-flex py-3" href="./images/papersample.gif" target="_blank">
+                    <img class="img-fluid" style="border-radius: 10px; width: 25rem;" src="./images/papersample.gif"
+                        alt="papersamplegif">
                 </a>
             </div>
             <div class="row">
-                <h1 class="col container-fluid my-1">Features</h1>
+                <h1 class="col container-fluid my-1 font-monospace">Features</h1>
                 <div class="col container-fluid lead my-1">
                     <p>1: Working Search Engine.</p>
                     <p>2: Now you can Save Images.</p>
@@ -164,12 +173,12 @@
 
     <!-- Movie web app -->
     <div class="container my-4" id="Movies"
-        style="border-radius: 20px; box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.336);">
+        style="border-radius: 20px; box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.336); background-color: lightsalmon;">
         <div class="d-flex justify-content-center col-5">
             <a class="text-decoration-none" href="./Papers/index.html" target="_blank">
                 <!-- <img class="my-3" style="width: 150px;height: 150px;" src="./Papers/images/Logo.png"
                     alt="Papers logo"></a> -->
-                <h1 class="text-dark text-center mx-2" style="font-size: 5rem;">Movies</h1>
+                <h1 class="mx-3 text-dark text-center display-1 font-monospace">Movies</h1>
             </a>
         </div>
         <!-- carousel strating from here -->
@@ -199,19 +208,20 @@
         </div>
         <!-- carousel Ending from here -->
         <div class="jumbotron p-3 p-md-5 text-dark">
-            <h1>About</h1>
+            <h1 class="font-monospace">About</h1>
             <p class="lead my-3">A Movie web app using themoviedb Api. Which get Movie data and images from themoviedb
                 api and we
                 know that watching or downloading movie is illegal so our api doesn't provide that features so it will
                 directly show some movie trailers/teaser from YouTube.
             </p>
-            <div class="container-fluid" style="width: 300px; height: 200px;">
-                <a href="./images/papersample.gif" target="_blank">
-                    <img style="border-radius: 10px;" src="./images/papersample.gif" alt="">
+            <div class="container-fluid">
+                <a class="justify-content-center d-flex py-3" href="./images/papersample.gif" target="_blank">
+                    <img class="img-fluid" style="border-radius: 10px; width: 25rem;" src="./images/papersample.gif"
+                        alt="papersamplegif">
                 </a>
             </div>
             <div class="row">
-                <h1 class="col container-fluid my-1">Features</h1>
+                <h1 class="col container-fluid my-1 font-monospace">Features</h1>
                 <div class="col container-fluid lead my-1">
                     <p>1: Get movie data in real-time.</p>
                     <p>2: Added YouTube links to watch trailers.</p>
@@ -222,12 +232,12 @@
 
     <!-- Weather web app -->
     <div class="container my-4" id="Weather"
-        style="border-radius: 20px; box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.336);">
+        style="border-radius: 20px; box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.336); background-color: lightpink;">
         <div class="d-flex justify-content-center col-5">
             <a class="text-decoration-none" href="./weather/index.html" target="_blank">
                 <!-- <img class="my-3" style="width: 150px;height: 150px;" src="./Papers/images/Logo.png"
                     alt="Papers logo"></a> -->
-                <h1 class="text-dark text-center mx-2" style="font-size: 5rem;">Weather</h1>
+                <h1 class="mx-3 text-dark text-center display-1 font-monospace">Weather</h1>
             </a>
         </div>
         <!-- carousel strating from here -->
@@ -257,19 +267,23 @@
         </div>
         <!-- carousel Ending from here -->
         <div class="jumbotron p-3 p-md-5 text-dark">
-            <h1>About</h1>
-            <p class="lead my-3">..
+            <h1 class="font-monospace">About</h1>
+            <p class="lead my-3">Weather web app is a website which you can access from
+                anywhere in the world to know the climatic or weather
+                conditions of any place or country in the world remotely or
+                without surfing n number of different websites.
             </p>
-            <div class="container-fluid" style="width: 300px; height: 200px;">
-                <a href="./images/weathersample.gif" target="_blank">
-                    <img style="border-radius: 10px;" src="./images/weathersample.gif" alt="">
+            <div class="container-fluid">
+                <a class="justify-content-center d-flex py-3" href="./images/weathersample.gif" target="_blank">
+                    <img class="img-fluid" style="border-radius: 10px; width: 25rem;" src="./images/weathersample.gif"
+                        alt="papersamplegif">
                 </a>
             </div>
             <div class="row">
-                <h1 class="col container-fluid my-1">Features</h1>
+                <h1 class="col container-fluid my-1 font-monospace">Features</h1>
                 <div class="col container-fluid lead my-1">
-                    <p></p>
-                    <p></p>
+                    <p>1. Accurate weather data in real-time.</p>
+                    <p>2. </p>
                 </div>
             </div>
         </div>
@@ -298,17 +312,17 @@
     </div> -->
 
     <!-- FAQ -->
-    <div class="container py-3" style="border-radius: 20px; box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.336);">
-        <h1 class="text-dark text-center display-4">Your Questions are Answered here</h1>
+    <div class="container py-3" style="border-radius: 20px; box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.336); background-color: lightgoldenrodyellow;">
+        <h1 class="text-black text-center display-4">Your Questions are Answered here</h1>
         <div class="row justify-content-center d-flex">
-            <div class="container col">
-                <img src="./images/faq.png" style="width: 300px; height: 300px;" alt="faqimg">
+            <div class="col container-fluid">
+                <img src="./images/faq.png" style="width: 18.75rem; height: 18.75rem;" alt="faqimg">
             </div>
             <div class="container-fluid col">
                 <h2 class="my-3 text-success">
-                    Q.What is the Major Project ?
+                    Q.What is the Web Collection ?
                 </h2>
-                <p class="mx-2">A.Actully its our Major Project so we already discussed that in the top.</p>
+                <p class="mx-2">A.Actully its our Web Collection so we already discussed that in the top.</p>
                 <h2 class="my-3 text-success">
                     Q.Can we watch movie ?
                 </h2>
@@ -327,15 +341,15 @@
 
     <!-- Feedback form -->
     <div class="container my-3" id="feedback"
-        style="border-radius: 20px; box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.336);">
+        style="border-radius: 20px; box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.336); background-color: lightgrey;">
 
         <div class="row justify-content-center d-flex">
             <h1 class="my-3 text-dark text-center display-4">Your Feedback is !mportant to us</h1>
             <div class="container col">
-                <img src="./images/feedback.png" style="width: 300px; height: 300px;" alt="feedbackimg">
+                <img src="./images/feedback.png" style="width:18.75rem; height:18.75rem;" alt="feedbackimg">
             </div>
 
-            <div class="col container py-4">
+            <div class="col container-fluid py-4">
                 <!-- Wrapper container -->
                 <form id="contactForm">
 
@@ -376,14 +390,14 @@
     </div>
     <!-- Support team Profile -->
     <div class="container py-3" id="Support"
-        style="border-radius: 20px; box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.336);">
+        style="border-radius: 20px; box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.336); background-color: lightblue;">
         <h1 class="text-dark text-center display-4">Developer and Support Team</h1>
         <div class="container row">
             <!-- Prateek profile -->
             <div class="col my-3 mx-auto justify-content-center d-grid">
-                <img class="rounded-circle" src="./images/prateek.jpg" style="width: 250px; height: 250px;"
+                <img class="rounded-circle img-fluid" src="./images/prateek.jpg" style="width: 15rem; height: 15rem;"
                     alt="Prateek Uppal">
-                <h2 class="my-3 text-center">
+                <h2 class="my-3 text-center border-bottom">
                     <a style="text-decoration: none; color: black;" href="" class="typewrite" data-period="2000"
                         data-type='[ "Prateek Uppal", "Weather App" ]'>
                         <span class="wrap"></span>
@@ -392,18 +406,18 @@
 
                 <div class="container justify-content-center d-flex">
                     <a href="#"><img class="order-md-1 mx-1" src="./images/facebook.png" alt="facebook"
-                            style="width: 50px; height: 50px"></a>
+                            style="width: 3rem; height: 3rem;"></a>
                     <a href="#"><img class="order-md-1 mx-1" src="./images/twitter.png" alt="twitter"
-                            style="width: 50px; height: 50px"></a>
+                            style="width: 3rem; height: 3rem;"></a>
                     <a href="#"><img class="order-md-1 mx-1" src="./images/instagram.png" alt="instagram"
-                            style="width: 50px; height: 50px"></a>
+                            style="width: 3rem; height: 3rem;"></a>
                 </div>
             </div>
             <!-- Sahil Profile -->
             <div class="col my-3 justify-content-center d-grid">
-                <img class="rounded-circle" src="./images/sahil.jpg" style="width: 250px; height: 250px;"
+                <img class="rounded-circle" src="./images/sahil.jpg" style="width: 15rem; height: 15rem;"
                     alt="sahil Singh">
-                <h2 class="my-3 text-center">
+                <h2 class="my-3 text-center border-bottom">
                     <a style="text-decoration: none; color: black;" href="" class="typewrite" data-period="2000"
                         data-type='[ "Sahil Singh", "Movie App"]'>
                         <span class="wrap"></span>
@@ -412,19 +426,19 @@
 
                 <div class="container justify-content-center d-flex">
                     <a href="#"><img class="order-md-1 mx-1" src="./images/facebook.png" alt="facebook"
-                            style="width: 50px; height: 50px"></a>
+                            style="width: 3rem; height: 3rem;"></a>
                     <a href="#"><img class="order-md-1 mx-1" src="./images/twitter.png" alt="twitter"
-                            style="width: 50px; height: 50px"></a>
+                            style="width: 3rem; height: 3rem;"></a>
                     <a href="#"><img class="order-md-1 mx-1" src="./images/instagram.png" alt="instagram"
-                            style="width: 50px; height: 50px"></a>
+                            style="width: 3rem; height: 3rem;"></a>
                 </div>
             </div>
             <!-- Saurav Profile -->
             <div class="col my-3 justify-content-center d-grid">
-                <img class="rounded-circle" src="./images/saurav.jpg" style="width: 250px; height: 250px;"
+                <img class="rounded-circle" src="./images/saurav.jpg" style="width: 15rem; height: 15rem;"
                     alt="Saurav Rawat">
                 <div>
-                    <h2 class="my-3 text-center">
+                    <h2 class="my-3 text-center border-bottom">
                         <a style="text-decoration: none; color: black;" href="" class="typewrite" data-period="2000"
                             data-type='[ "Saurav Rawat", "Paper App" ]'>
                             <span class="wrap"></span>
@@ -432,11 +446,11 @@
                     </h2>
                     <div class="container justify-content-center d-flex">
                         <a href="#"><img class="order-md-1 mx-1" src="./images/facebook.png" alt="facebook"
-                                style="width: 50px; height: 50px"></a>
+                                style="width: 3rem; height: 3rem;"></a>
                         <a href="#"><img class="order-md-1 mx-1" src="./images/twitter.png" alt="twitter"
-                                style="width: 50px; height: 50px"></a>
+                                style="width: 3rem; height: 3rem;"></a>
                         <a href="#"><img class="order-md-1 mx-1" src="./images/instagram.png" alt="instagram"
-                                style="width: 50px; height: 50px"></a>
+                                style="width: 3rem; height: 3rem;"></a>
                     </div>
                 </div>
             </div>
@@ -444,7 +458,7 @@
     </div>
     <!-- Follow us our handles -->
     <div class="container py-4">
-        <h1 class="display-4 text-center text-dark">Follow us on</h1>
+        <h1 class="display-4 text-center text-dark font-monospace">Follow us on</h1>
         <div class="justify-content-center d-flex">
             <img style="width: 50px; height: 50px; cursor: pointer;" src="./images/facebook.png" alt="facebook"></a>
             <img style="width: 50px; height: 50px; cursor: pointer;" src="./images/twitter.png" alt="twitter">
@@ -453,11 +467,16 @@
             <img style="width: 50px; height: 50px; cursor: pointer;" src="./images/telegram.png" alt="telegram">
             <img style="width: 50px; height: 50px; cursor: pointer;" src="./images/download.png" alt="download">
         </div>
+        <div class="justify-content-center d-grid">
+            <a href="#majorlogo"><img class="py-3" style="width: 12rem;" src="./images/projectlogo.png" alt="majorlogo">
+            </a>
+            <small class="d-block mb-3 text-muted text-center">© 2022-2023</small>
+        </div>
     </div>
     <!-- Footer -->
-    <footer class="row py-4 text-center">
-        <div class="col-4 justify-content-center d-grid">
-            <h5 style="font-size: x-large;">Sources</h5>
+    <footer class="row py-1 text-center">
+        <div class="col justify-content-center d-grid">
+            <h5 style="font-size: x-large; font-family: monospace;">Sources</h5>
             <ul class="list-unstyled text-small">
                 <li><a class="link-secondary text-decoration-none" href="https://www.pexels.com/"
                         target="_blank">Pexels</a></li>
@@ -472,14 +491,8 @@
                         target="_blank">Weather</a></li>
             </ul>
         </div>
-        <div class="col-4 justify-content-center d-grid">
-            <a href="#majorlogo"><img class="" style="width: 200px; height: 100px;" src="./images/Project logo.png"
-                    alt="majorlogo">
-            </a>
-            <small class="d-block mb-3 text-muted text-center">© 2021-2022</small>
-        </div>
-        <div class="col-4 justify-content-center d-grid">
-            <h5 style="font-size: x-large;">About</h5>
+        <div class="col justify-content-center d-grid">
+            <h5 style="font-size: x-large; font-family: monospace;">About</h5>
             <ul class="list-unstyled text-small">
                 <li><a class="link-secondary text-decoration-none" href="#papers">Papers</a></li>
                 <li><a class="link-secondary text-decoration-none" href="#Movies">Movies</a></li>

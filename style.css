@@ -38,6 +38,7 @@ html {
  .Quote {
   display: flex;
   color: #000;
+  font-family: monospace;
   flex-direction: column;
 }
 #quote {
@@ -61,7 +62,7 @@ nav {
 }
 
 nav.active{
-  width: 300px;
+  width: 350px;
 }
 
 nav ul {
@@ -92,13 +93,12 @@ nav li a{
   text-decoration: none;
   color:#000;
   position:relative;
-  font-family: monospace;
-  font-weight: 200;
-  font-size: large;
+  font-weight: 300;
+  font-size: 1rem;
 }
 
 .icon{
-  background-color: #8ecae6;
+  background-color: #fff;
   border:0;
   border-radius: 5px;
   height:30px;
@@ -113,7 +113,7 @@ nav li a{
 }
 
 .icon .line{
-  background-color: #000;
+  background-color: cadetblue;
   height:2px;
   width:20px;
   position:absolute;
