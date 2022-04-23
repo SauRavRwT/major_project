@@ -84,7 +84,7 @@ form ion-icon{
 }
 .item{
   width: 100%;
-  height: 90%;
+  height: 30rem;
   position: relative;
   overflow: hidden;
   border-radius: 20px;
@@ -132,8 +132,9 @@ form ion-icon{
    justify-content: space-between;
  }
  .header h1{
-   font-size: 50px;
+   font-size: 80px;
    font-family: monospace;
+   color: #2c2f46;
  }
  .header input{
    font-size: 24px;
@@ -141,14 +142,17 @@ form ion-icon{
  .header ion-icon{
    font-size: 24px;
  }
- .gallery{
-   grid-gap: 30px;
- }
- button{
-  font-size: 1.5rem;
-  padding: 10px;
-  cursor: pointer;
-  margin-left: auto;
-  margin-right: auto;
 }
+.photo-download_info{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  padding-bottom: 1rem;
+  padding-right: 1.15rem;
+}
+.photo-download_info:hover img{
+  bottom: 0;
 }

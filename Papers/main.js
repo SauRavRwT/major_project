@@ -50,14 +50,18 @@ class Papers {
       const item = document.createElement('div');
       item.classList.add('item');
       item.innerHTML = `
-      <a href='${photo.src.original}' target="_blank">
+      <a href='${photo.src.original}' data-lightbox="mygallary">
         <img src="${photo.src.large}">
         <h3>${photo.photographer}</h3>
+      </a>
+      <a href='${photo.src.original}' target="_blank" dowload="pexelimg">
+        <img class="photo-download_info" src="./images/download.png">
       </a>
       `;
       this.galleryDIv.appendChild(item)
     })
   }
+  
   async getSearchedImages(e) {
     this.loadMore.setAttribute('data-img', 'search');
     e.preventDefault();
