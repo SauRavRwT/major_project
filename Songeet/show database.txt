@@ -1,0 +1,7 @@
+var firebaseRef = firebase.database().ref("contactForm");
+firebaseRef.on("value", function(snapshot){
+  snapshot.forEach(function(element){
+    document.querySelector('#root').innerHTML +=
+    '<div>${element.val()}</div>'
+  });
+})

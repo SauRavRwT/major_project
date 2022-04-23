@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Songeet</title>
+    <link rel="shortcut icon" href="./images/saurav.jpg">
+</head>
+
+<body class="font-monospace">
+    <!-- <style>
+        @media (prefers-color-scheme: dark) {
+            body {
+                /* Just Styles */
+                background: #000;
+                color: #fff;
+            }
+        }
+    </style> -->
+    <div class="container">
+        <header class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-dark text-decoration-none display-1" href="#Songeet">Songeet</a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a class="link-secondary" href="#" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img"
+                            viewBox="0 0 24 24" style="color: green;">
+                            <title>Search</title>
+                            <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                            <path d="M21 21l-5.2-5.2"></path>
+                        </svg>
+                    </a>
+                    <a class="btn btn-sm btn-outline-success" href="../Web Collection.html">Home</a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main class="container">
+        <div class="p-4 p-md-5 mb-4 text-light bg-dark"
+            style="box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.336); border-radius: 20px;">
+            <div class="col-md-6 px-0">
+                <h1 class="display-4 fst-italic">Songeet</h1>
+                <p class="lead my-3">A simple Music Player with the help of Html , CSS & Javascript.This is a beta
+                    Project Still not completed yet stay tune with us for more exiting features.
+                </p>
+                <p class="lead mb-0">
+                    <a class="btn btn-sm btn-outline-success" href="./music.html">Checkout...</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-md-6 py-3">
+                <h1 class="mx-3 display-3">Developer</h1>
+                <!-- Saurav profile -->
+                <div class="col py-3 mx-auto justify-content-center d-grid">
+                    <img class="rounded-circle" src="./images/saurav.jpg" style="width: 250px; height: 250px;"
+                        alt="Prateek Uppal">
+                    <h2 class="my-3 text-center">
+                        <a style="text-decoration: none; color: #000;" href="" class="typewrite" data-period="2000"
+                            data-type='[ "Hi, I am Saurav", "Frontend/Backend" ]'>
+                            <span class="wrap"></span>
+                        </a>
+                    </h2>
+
+                    <div class="container justify-content-center d-flex">
+                        <a href="#"><img class="order-md-1 mx-1" src="./images/facebook.png" alt="facebook"
+                                style="width: 50px; height: 50px"></a>
+                        <a href="#"><img class="order-md-1 mx-1" src="./images/github.png" alt="twitter"
+                                style="width: 50px; height: 50px"></a>
+                        <a href="#"><img class="order-md-1 mx-1" src="./images/instagram.png" alt="instagram"
+                                style="width: 50px; height: 50px"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 py-3">
+                <h1 class="mx-3 display-3">Feedback Form</h1>
+                <div class="col container py-4">
+                    <!-- Wrapper container -->
+                    <form id="contactForm">
+
+                        <!-- Name input -->
+                        <div class="mb-3">
+                            <h5 class="mx-3 lead">Name</h5>
+                            <input class="form-control" id="name" type="text" placeholder="Your Name...."
+                                data-sb-validations="required" style="border-radius: 8px;" />
+                        </div>
+
+                        <!-- Email address input -->
+                        <div class="mb-3">
+                            <h5 class="mx-3 lead">E-mail address</h5>
+                            <input class="form-control" id="emailid" type="email" placeholder="Your Email...."
+                                style="border-radius: 8px;" data-sb-validations="required, email" />
+                        </div>
+
+                        <!-- messsgeContent input -->
+                        <div class="mb-3">
+                            <h5 class="mx-3 lead">Your Feedback</h5>
+                            <textarea class="form-control" id="msgContent" type="text" placeholder="Feedback...."
+                                style="height: 8rem; border-radius: 8px;" data-sb-validations="required"></textarea>
+                        </div>
+
+                        <!-- Form submit button -->
+                        <div class="d-grid">
+                            <button style="border-radius: 10px;" class="btn btn-success btn-lg" id="submitButton"
+                                type="submit">
+                                Send</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+    </main>
+
+    <footer class="py-4 blog-footer justify-content-center d-grid">
+        <p>Made with ♥ Songeet by <a class="text-decoration-none"
+                href="https://www.instagram.com/sauravrwt.2071/">SauravRawat</a>.
+        </p>
+        <p class="justify-content-center d-flex">
+            <a href="#" id="songeet">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-capslock-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816L7.27 1.047zM4.5 13.5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1z" />
+                </svg>
+            </a>
+        </p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./main.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
