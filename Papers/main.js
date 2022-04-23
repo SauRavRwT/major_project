@@ -50,7 +50,7 @@ class Papers {
       const item = document.createElement('div');
       item.classList.add('item');
       item.innerHTML = `
-      <a href='${photo.src.original}' data-lightbox="mygallary">
+      <a href='${photo.src.original}' data-lightbox="mygallary" data-title="${photo.photographer}">
         <img src="${photo.src.large}">
         <h3>${photo.photographer}</h3>
       </a>
