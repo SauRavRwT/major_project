@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="Major project">
+    <meta name="author" content="Saurav Rawat, Sahil Singh, Prateek Uppal">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Optional CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="./images/Project logo.png">
+    <title>Web Collections</title>
+</head>
+
+<body style="background-image: linear-gradient(to right, cadetblue, lightblue);">
+    <!-- <style>
+        @media (prefers-color-scheme: dark) {
+            body {
+                /* Just Styles */
+                background: #000;
+                color: #fff;
+            }
+        }
+    </style> -->
+    <!--header-->
+    <div class="container">
+        <header class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col justify-content-center d-flex">
+                    <img class="img-fluid" id="majorlogo" src="./images/projectlogo.png" alt="" style="width: 20rem;">
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a style="width: 5rem;" class="btn btn-sm btn-outline-success" href="./index.html"
+                        onclick="signOut()">Log Out</a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!--navbar-->
+    <div class="justify-content-center d-flex">
+        <nav class="justify-content-center d-flex text-center py-3">
+            <a href="#papers" style="text-decoration: none; font-size: 1rem; font-weight: bold; color: black;">Papers</a>
+            <a href="#Movies" style="text-decoration: none; font-size: 1rem; font-weight: bold; color: black;">Movies</a>
+            <a href="#Weather" style="text-decoration: none; font-size: 1rem; font-weight: bold; color: black;">Weather</a>
+            <a href="#Songeet" style="text-decoration: none; font-size: 1rem; font-weight: bold; color: black;">Songeet</a>
+            <a href="#Support" style="text-decoration: none; font-size: 1rem; font-weight: bold; color: black;">Support</a>
+        </nav>
+    </div>
+
+    <!-- Quotes -->
+    <div class="Quote my-3">
+        <div class="quote-box">
+            <p class="lead" id="quote">"It is not wise to judge others based on your own preconceptions and by their
+                appearances."</p>
+            <a id="btn">
+                <p class="lead text-center font-monospace" id="author"> - Itachi Uchiha</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- Overview Container -->
+    <div class="container justify-content-center py-4" style="border-radius: 20px;
+    box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.336); background-color: lightcyan;">
+        <!-- carousel strating from here -->
+        <div id="overviewcarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" style="height: 100%;">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img style="height: 100%; width: 100%; border-radius: 20px" src="./images/PapersC1.png"
+                        class="d-block w-100" alt="maincarouselimg">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img style="height: 100%; width: 100%; border-radius: 20px" src="./images/WeatherC1.png"
+                        class="d-block w-100" alt="maincarouselimg">
+                </div>
+                <div class="carousel-item">
+                    <img style="height: 100%; width: 100%; border-radius: 20px" src="./images/WeatherC1.png"
+                        class="d-block w-100" alt="maincarouselimg">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#overviewcarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#overviewcarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- carousel Ending from here -->
+        <!-- intro -->
+        <div class="jumbotron p-3 p-md-5 text-dark">
+            <div class="col-md-8 px-0">
+                <h1 class="display-2 font-monospace">Overview</h1>
+                <p class="lead my-1">This is a Major project or we can say a beta project.
+                    To make all in one webpage that have all important pages or sites. To make users feel convenient and
+                    use more features that are provided by us.
+                    This project like a portfolio in which we working in different projects like.
+                </p>
+                <p class="my-1">1. A movie app using themoviedb api.</p>
+                <p class="my-1">2. A wallpaper app by using pexels api.</p>
+                <p class="my-1">3. A Weather app that shows accurate weather of your location.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Papers wallpaper app -->
+    <div class="container my-4" id="papers"
+        style="border-radius: 20px; box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.336); background-color: lightsteelblue;">
+        <div class="d-flex justify-content-center col-5">
+            <a class="text-decoration-none" href="./Papers/index.html" target="_blank">
+                <!-- <img class="my-3 rounded-circle" style="width: 150px;height: 150px;" src="./Papers/images/Logo.png"
+                    alt="Papers logo"> -->
+                <h1 class="mx-3 text-dark text-center display-1 font-monospace ">Papers</h1>
+            </a>
+        </div>
+        <!-- carousel strating from here -->
+        <div id="paperscarousel" class="carousel slide my-2" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img style="height: 100%; width: 100%; border-radius: 20px" src="./images/PapersC1.png"
+                        class="d-block w-100" alt="paperscarouselimg">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img style="height: 100%; width: 100%; border-radius: 20px" src="./images/PapersC2.png"
+                        class="d-block w-100" alt="paperscarouselimg">
+                </div>
+                <div class="carousel-item">
+                    <img style="height: 100%; width: 100%; border-radius: 20px" src="./images/PapersC3.png"
+                        class="d-block w-100" alt="paperscarouselimg">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#paperscarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#paperscarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- carousel Ending from here -->
+        <div class="jumbotron p-3 p-md-5 text-dark">
+            <h1 class="font-monospace">About</h1>
+            <p class="lead my-3">A wallpaper web app using pexels Api. Which get images from pexels and shows images in
+                Papers web app. Demonstration video is given below.
+            </p>
+            <div class="container-fluid">
+                <a class="justify-content-center d-flex py-3" href="./images/papersample.gif" target="_blank">
+                    <img class="img-fluid" style="border-radius: 10px; width: 25rem;" src="./images/papersample.gif"
+                        alt="papersamplegif">
+                </a>
+            </div>
+            <div class="row">
+                <h1 class="col container-fluid my-1 font-monospace">Features</h1>
+                <div class="col container-fluid lead my-1">
+                    <p>1: Working Search Engine.</p>
+                    <p>2: Now you can Save Images.</p>
+                    <p>3: Now you get more images.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Movie web app -->
+    <div class="container my-4" id="Movies"
+        style="border-radius: 20px; box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.336); background-color: lightsalmon;">
+        <div class="d-flex justify-content-center col-5">
+            <a class="text-decoration-none" href="./Papers/index.html" target="_blank">
+                <!-- <img class="my-3" style="width: 150px;height: 150px;" src="./Papers/images/Logo.png"
+                    alt="Papers logo"></a> -->
+                <h1 class="mx-3 text-dark text-center display-1 font-monospace">Movies</h1>
+            </a>
+        </div>
+        <!-- carousel strating from here -->
+        <div id="moviecarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" style="height: 100%;">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img style="height: 100%; width: 100%; border-radius: 20px" src="#" class="d-block w-100"
+                        alt="moviecarouselimg">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img style="height: 100%; width: 100%; border-radius: 20px" src="#" class="d-block w-100"
+                        alt="moviecarouselimg">
+                </div>
+                <div class="carousel-item">
+                    <img style="height: 100%; width: 100%; border-radius: 20px" src="#" class="d-block w-100"
+                        alt="moviecarouselimg">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#moviecarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#moviecarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- carousel Ending from here -->
+        <div class="jumbotron p-3 p-md-5 text-dark">
+            <h1 class="font-monospace">About</h1>
+            <p class="lead my-3">A Movie web app using themoviedb Api. Which get Movie data and images from themoviedb
+                api and we
+                know that watching or downloading movie is illegal so our api doesn't provide that features so it will
+                directly show some movie trailers/teaser from YouTube.
+            </p>
+            <div class="container-fluid">
+                <a class="justify-content-center d-flex py-3" href="./images/papersample.gif" target="_blank">
+                    <img class="img-fluid" style="border-radius: 10px; width: 25rem;" src="./images/papersample.gif"
+                        alt="papersamplegif">
+                </a>
+            </div>
+            <div class="row">
+                <h1 class="col container-fluid my-1 font-monospace">Features</h1>
+                <div class="col container-fluid lead my-1">
+                    <p>1: Get movie data in real-time.</p>
+                    <p>2: Added YouTube links to watch trailers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Weather web app -->
+    <div class="container my-4" id="Weather"
+        style="border-radius: 20px; box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.336); background-color: lightpink;">
+        <div class="d-flex justify-content-center col-5">
+            <a class="text-decoration-none" href="./weather/index.html" target="_blank">
+                <!-- <img class="my-3" style="width: 150px;height: 150px;" src="./Papers/images/Logo.png"
+                    alt="Papers logo"></a> -->
+                <h1 class="mx-3 text-dark text-center display-1 font-monospace">Weather</h1>
+            </a>
+        </div>
+        <!-- carousel strating from here -->
+        <div id="weathercarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" style="height: 100%;">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img style="height: 100%; width: 100%; border-radius: 20px" src="./images/WeatherC1.png"
+                        class="d-block w-100" alt="weathercarouselimg">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img style="height: 100%; width: 100%; border-radius: 20px" src="./images/WeatherC2.png"
+                        class="d-block w-100" alt="weathercarouselimg">
+                </div>
+                <div class="carousel-item">
+                    <img style="height: 100%; width: 100%; border-radius: 20px" src="./images/WeatherC3.png"
+                        class="d-block w-100" alt="weathercarouselimg">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#weathercarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#weathercarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- carousel Ending from here -->
+        <div class="jumbotron p-3 p-md-5 text-dark">
+            <h1 class="font-monospace">About</h1>
+            <p class="lead my-3">Weather web app is a website which you can access from
+                anywhere in the world to know the climatic or weather
+                conditions of any place or country in the world remotely or
+                without surfing n number of different websites.
+            </p>
+            <div class="container-fluid">
+                <a class="justify-content-center d-flex py-3" href="./images/weathersample.gif" target="_blank">
+                    <img class="img-fluid" style="border-radius: 10px; width: 25rem;" src="./images/weathersample.gif"
+                        alt="papersamplegif">
+                </a>
+            </div>
+            <div class="row">
+                <h1 class="col container-fluid my-1 font-monospace">Features</h1>
+                <div class="col container-fluid lead my-1">
+                    <p>1. Accurate weather data in real-time.</p>
+                    <p>2. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Songeet web app -->
+    <div class="container my-4" id="Songeet"
+        style="border-radius: 20px; box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.336); background-color: lightseagreen;">
+        <div class="d-flex justify-content-center col-5 py-3">
+            <a class="text-decoration-none" href="./Songeet/index.html" target="_blank">
+                <h1 class="mx-3 text-dark text-center display-1 font-monospace" id="Songeet">Songeet<span
+                        class="my-auto" style="font-size: large; color: green;">Beta</span></h1>
+            </a>
+        </div>
+        <!-- carousel strating from here -->
+        <div id="songeetcarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" style="height: 100%;">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img style="height: 100%; width: 100%; border-radius: 20px" src="./images/SongeetC1.png"
+                        class="d-block w-100" alt="songeetcarouselimg">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img style="height: 100%; width: 100%; border-radius: 20px" src="./images/SongeetC2.png"
+                        class="d-block w-100" alt="songeetcarouselimg">
+                </div>
+                <div class="carousel-item">
+                    <img style="height: 100%; width: 100%; border-radius: 20px" src="./images/SongeetC3.png"
+                        class="d-block w-100" alt="songeetcarouselimg">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#songeetcarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#songeetcarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- carousel Ending from here -->
+        <div class="jumbotron p-3 p-md-5 text-dark">
+            <h1>About</h1>
+            <p class="lead my-3">A simple Music Player with the help of Html, CSS & Javascript.This is a beta
+                Project Still not completed yet stay tune with us for more exiting features.
+            </p>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="container py-3"
+        style="border-radius: 20px; box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.336); background-color: lightgoldenrodyellow;">
+        <h1 class="text-black text-center display-4">Your Questions are Answered here</h1>
+        <div class="row justify-content-center d-flex">
+            <div class="col container-fluid">
+                <img src="./images/faq.png" style="width: 18.75rem; height: 18.75rem;" alt="faqimg">
+            </div>
+            <div class="container-fluid col">
+                <h2 class="my-3 text-success">
+                    Q.What is the Web Collection ?
+                </h2>
+                <p class="mx-2">A.Actully its our Web Collection so we already discussed that in the top.</p>
+                <h2 class="my-3 text-success">
+                    Q.Can we watch movie ?
+                </h2>
+                <p class="mx-2">A.No, We already mentioned that on our movie web app section.</p>
+                <h2 class="my-3 text-success">
+                    Q.Can we download images in Papers ?
+                </h2>
+                <p class="mx-2">A.No, You can save them.</p>
+                <h2 class="my-3 text-success">
+                    Q.Can we download images in Papers ?
+                </h2>
+                <p class="mx-2">A.No, You can save them.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback form -->
+    <div class="container my-3" id="feedback"
+        style="border-radius: 20px; box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.336); background-color: lightgrey;">
+
+        <div class="row justify-content-center d-flex">
+            <h1 class="my-3 text-dark text-center display-4">Your Feedback is !mportant to us</h1>
+            <div class="container col">
+                <img src="./images/feedback.png" style="width:18.75rem; height:18.75rem;" alt="feedbackimg">
+            </div>
+
+            <div class="col container-fluid py-4">
+                <!-- Wrapper container -->
+                <form id="contactForm">
+
+                    <!-- Name input -->
+                    <div class="mb-3">
+                        <h5 class="mx-3 lead">Name</h5>
+                        <input class="form-control" id="name" type="text" placeholder="Your Name...."
+                            data-sb-validations="required" style="border-radius: 8px;" />
+                    </div>
+
+                    <!-- Email address input -->
+                    <div class="mb-3">
+                        <h5 class="mx-3 lead">E-mail address</h5>
+                        <input class="form-control" id="emailid" type="email" placeholder="Your Email...."
+                            style="border-radius: 8px;" data-sb-validations="required, email" />
+                    </div>
+
+                    <!-- messsgeContent input -->
+                    <div class="mb-3">
+                        <h5 class="mx-3 lead">Your Feedback</h5>
+                        <textarea class="form-control" id="msgContent" type="text" placeholder="Feedback...."
+                            style="height: 8rem; border-radius: 8px;" data-sb-validations="required"></textarea>
+                    </div>
+
+                    <!-- Form submit button -->
+                    <div class="d-grid">
+                        <button style="border-radius: 10px;" class="btn btn-success btn-lg" id="submitButton"
+                            onclick="showAlert()" type="submit">
+                            <img style="width: 20px; height: 20px;" src="./images/send.png" alt="">
+                            Send</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Support team Profile -->
+    <div class="container py-3" id="Support"
+        style="border-radius: 20px; box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.336); background-color: lightblue;">
+        <h1 class="text-dark text-center display-4">Developer and Support Team</h1>
+        <div class="container row">
+            <!-- Prateek profile -->
+            <div class="col my-3 mx-auto justify-content-center d-grid">
+                <img class="rounded-circle img-fluid" src="./images/prateek.jpg" style="width: 15rem; height: 15rem;"
+                    alt="Prateek Uppal">
+                <h2 class="my-3 text-center border-bottom">
+                    <a style="text-decoration: none; color: black;" href="" class="typewrite" data-period="2000"
+                        data-type='[ "Prateek Uppal", "Weather App" ]'>
+                        <span class="wrap"></span>
+                    </a>
+                </h2>
+
+                <div class="container justify-content-center d-flex">
+                    <a href="#"><img class="order-md-1 mx-1" src="./images/facebook.png" alt="facebook"
+                            style="width: 3rem; height: 3rem;"></a>
+                    <a href="#"><img class="order-md-1 mx-1" src="./images/twitter.png" alt="twitter"
+                            style="width: 3rem; height: 3rem;"></a>
+                    <a href="#"><img class="order-md-1 mx-1" src="./images/instagram.png" alt="instagram"
+                            style="width: 3rem; height: 3rem;"></a>
+                </div>
+            </div>
+            <!-- Sahil Profile -->
+            <div class="col my-3 justify-content-center d-grid">
+                <img class="rounded-circle" src="./images/sahil.jpg" style="width: 15rem; height: 15rem;"
+                    alt="sahil Singh">
+                <h2 class="my-3 text-center border-bottom">
+                    <a style="text-decoration: none; color: black;" href="" class="typewrite" data-period="2000"
+                        data-type='[ "Sahil Singh", "Movie App"]'>
+                        <span class="wrap"></span>
+                    </a>
+                </h2>
+
+                <div class="container justify-content-center d-flex">
+                    <a href="#"><img class="order-md-1 mx-1" src="./images/facebook.png" alt="facebook"
+                            style="width: 3rem; height: 3rem;"></a>
+                    <a href="#"><img class="order-md-1 mx-1" src="./images/twitter.png" alt="twitter"
+                            style="width: 3rem; height: 3rem;"></a>
+                    <a href="#"><img class="order-md-1 mx-1" src="./images/instagram.png" alt="instagram"
+                            style="width: 3rem; height: 3rem;"></a>
+                </div>
+            </div>
+            <!-- Saurav Profile -->
+            <div class="col my-3 justify-content-center d-grid">
+                <img class="rounded-circle" src="./images/saurav.jpg" style="width: 15rem; height: 15rem;"
+                    alt="Saurav Rawat">
+                <div>
+                    <h2 class="my-3 text-center border-bottom">
+                        <a style="text-decoration: none; color: black;" href="" class="typewrite" data-period="2000"
+                            data-type='[ "Saurav Rawat", "Paper App" ]'>
+                            <span class="wrap"></span>
+                        </a>
+                    </h2>
+                    <div class="container justify-content-center d-flex">
+                        <a href="#"><img class="order-md-1 mx-1" src="./images/facebook.png" alt="facebook"
+                                style="width: 3rem; height: 3rem;"></a>
+                        <a href="#"><img class="order-md-1 mx-1" src="./images/twitter.png" alt="twitter"
+                                style="width: 3rem; height: 3rem;"></a>
+                        <a href="#"><img class="order-md-1 mx-1" src="./images/instagram.png" alt="instagram"
+                                style="width: 3rem; height: 3rem;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Follow us our handles -->
+    <div class="container py-4">
+        <h1 class="display-4 text-center text-dark font-monospace">Follow us on</h1>
+        <div class="justify-content-center d-flex">
+            <img style="width: 50px; height: 50px; cursor: pointer;" src="./images/facebook.png" alt="facebook"></a>
+            <img style="width: 50px; height: 50px; cursor: pointer;" src="./images/twitter.png" alt="twitter">
+            <img style="width: 50px; height: 50px; cursor: pointer;" src="./images/instagram.png" alt="instagram">
+            <img style="width: 50px; height: 50px; cursor: pointer;" src="./images/github.png" alt="github">
+            <img style="width: 50px; height: 50px; cursor: pointer;" src="./images/telegram.png" alt="telegram">
+            <img style="width: 50px; height: 50px; cursor: pointer;" src="./images/download.png" alt="download">
+        </div>
+        <div class="justify-content-center d-grid">
+            <a href="#majorlogo"><img class="py-3" style="width: 12rem;" src="./images/projectlogo.png" alt="majorlogo">
+            </a>
+            <small class="d-block mb-3 text-muted text-center">© 2022-2023</small>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="row py-1 text-center">
+        <div class="col justify-content-center d-grid">
+            <h5 style="font-size: x-large; font-family: monospace;">Sources</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-secondary text-decoration-none" href="https://www.pexels.com/"
+                        target="_blank">Pexels</a></li>
+                <li><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/"
+                        target="_blank">Bootstrap</a>
+                </li>
+                <li><a class="link-secondary text-decoration-none" href="https://console.firebase.google.com/"
+                        target="_blank">Firebase</a></li>
+                <li><a class="link-secondary text-decoration-none" href="https://www.themoviedb.org/documentation/api"
+                        target="_blank">Themoviedb</a></li>
+                <li><a class="link-secondary text-decoration-none" href="https://openweathermap.org/api"
+                        target="_blank">Weather</a></li>
+            </ul>
+        </div>
+        <div class="col justify-content-center d-grid">
+            <h5 style="font-size: x-large; font-family: monospace;">About</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-secondary text-decoration-none" href="#papers">Papers</a></li>
+                <li><a class="link-secondary text-decoration-none" href="#Movies">Movies</a></li>
+                <li><a class="link-secondary text-decoration-none" href="#Weather">Weather</a></li>
+                <li><a class="link-secondary text-decoration-none" href="#feedback">Feedback</a></li>
+                <li><a class="link-secondary text-decoration-none" href="#Support">Support</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Scroll to top -->
+    <div class="scroll-top">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
+        </svg>
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./main.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
