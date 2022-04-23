@@ -7,3 +7,5 @@ This project like a portfolio in which we working in different projects like.
   1. A movie app using themoviedb api.
   2. A wallpaper app by using pexels api.
   3. A Weather app that shows accurate weather of your location.
+
+Live demo : https://sauravrwt.github.io/major_project/
