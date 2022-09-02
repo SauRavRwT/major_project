@@ -10,4 +10,4 @@ This project like a portfolio in which we working in different projects like.
   4. A simple Music Player with the help of Html , CSS & Javascript.This is a beta Project Still not completed yet stay tune with us for more exiting features.
 
 <img src="https://raw.githubusercontent.com/SauRavRwT/major_project/main/images/papersample.gif" width="50%" height="50%"/><img src="https://github.com/SauRavRwT/major_project/blob/main/images/moviezsample.gif" width="50%" height="60%"/>
-
+<img src="https://raw.githubusercontent.com/SauRavRwT/major_project/main/images/project.gif">
