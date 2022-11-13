@@ -11,7 +11,6 @@ This project like a portfolio in which we working in different projects like.</p
   3. A Weather app that shows accurate weather of your location.
   4. A simple Music Player with the help of Html , CSS & Javascript.This is a beta Project Still not completed yet stay tune with us for more exiting features.
   </samp>
-</details>
 
 <details align="center">
 <summary><h4 align='center'>Screenshots</h4><br></summary>
