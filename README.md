@@ -15,6 +15,6 @@ This project like a portfolio in which we working in different projects like.</p
 
 <details align="center">
 <summary><h4 align='center'>Screenshots</h4><br></summary>
-<img src="https://raw.githubusercontent.com/SauRavRwT/major_project/main/images/papersample.gif" width="50%" height="50%"/><img src="https://github.com/SauRavRwT/major_project/blob/main/images/moviezsample.gif" width="50%" height="60%"/>
+<img src="https://raw.githubusercontent.com/SauRavRwT/major_project/main/images/papersample.gif" width="50%" height="50%"/><img src="https://github.com/SauRavRwT/major_project/blob/main/images/moviezsample.gif" width="50%" height="50%"/>
 <img src="https://raw.githubusercontent.com/SauRavRwT/major_project/main/images/project.gif">
 </details>
