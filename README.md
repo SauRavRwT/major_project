@@ -1,11 +1,13 @@
 <details align="center">
 <summary><h4 align='center'>Major Project</h4><br></summary>
   <samp>
+<img src="https://github.com/SauRavRwT/Saurav.in/blob/main/images/project-2.png" width="100%" height="100%"/>
 <p>This is a Major project or we can say a beta project.
 To make all in one webpage that have all important pages or sites. To make users feel convenient and
 use more features that are provided by us.
 This project like a portfolio in which we working in different projects like.</p>
-  <p>
+  <img src="https://github.com/SauRavRwT/Saurav.in/blob/main/images/project-1.png" width="100%" height="100%"/>
+<p>
   1. A movie app using themoviedb api.
   2. A wallpaper app by using pexels api.
   3. A Weather app that shows accurate weather of your location.
