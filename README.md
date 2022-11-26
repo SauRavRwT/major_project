@@ -1,13 +1,15 @@
 <h4 align='center'>Major Project</h4><br>
-  <samp>
-<img src="https://github.com/SauRavRwT/Saurav.in/blob/main/images/project-2.png" width="100%" height="100%"/>
 
-<p align="center">This is a Major project or we can say a beta project.
-To make all in one webpage that have all important pages or sites. To make users feel convenient and
-use more features that are provided by us.
-This project like a portfolio in which we working in different projects like.</p>
-  <img src="https://github.com/SauRavRwT/Saurav.in/blob/main/images/project-1.png" width="100%" height="100%"/>
+<img src="https://github.com/SauRavRwT/Saurav.in/blob/main/images/project-2.png" width="50%"/><img src="https://github.com/SauRavRwT/Saurav.in/blob/main/images/project-1.png" width="50%"/>
+
+  <samp>
 <p align="center">
+This is a Major project or we can say a beta project. To make all in one webpage that have all important pages or sites. To make users feel convenient and
+use more features that are provided by us.This project like a portfolio in which we working in different projects like.
+</p>
+  </samp>
+  <samp>
+  <p align="center">
 
   1. A movie app using themoviedb api.
 
@@ -22,6 +24,6 @@ This project like a portfolio in which we working in different projects like.</p
 <details align="center">
 <summary></summary>
 <h2 align='center'>Screenshots</h2>
-<img src="https://raw.githubusercontent.com/SauRavRwT/major_project/main/images/papersample.gif" width="50%" height="50%"/><img src="https://github.com/SauRavRwT/major_project/blob/main/images/moviezsample.gif" width="50%" height="50%"/>
 <img src="https://raw.githubusercontent.com/SauRavRwT/major_project/main/images/project.gif">
+<img src="https://raw.githubusercontent.com/SauRavRwT/major_project/main/images/papersample.gif" width="50%" height="50%"/><img src="https://github.com/SauRavRwT/major_project/blob/main/images/moviezsample.gif" width="50%" height="50%"/>
 </details>
